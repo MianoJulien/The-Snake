@@ -10,7 +10,10 @@
 let snakeHead = document.getElementById("head");
 let snakeBody = document.getElementById("body");
 const game = document.querySelector(".game");
+let pageX = 0;
 
 game.addEventListener("click", (e) => {
-  console.log(e.pageX);
+  if (e.pageX++) {
+    snakeHead.remove();
+  }
 });

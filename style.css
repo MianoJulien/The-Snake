@@ -26,19 +26,27 @@ h1 {
   margin: 20px auto;
 }
 
-.sign {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: greenyellow;
-  position: relative;
-  height: 50px;
-}
 span {
   position: absolute;
   bottom: 10px;
   right: 10px;
   margin: 10px;
+  cursor: pointer;
+}
+a {
+  color: greenyellow;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+a:hover {
+  font-size: 1.2rem;
 }
 
+a:visited {
+  color: greenyellow;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
 #head {
   content: "";
   background: greenyellow;
