@@ -7,13 +7,11 @@
 // faire grandir le snake des qu il touche la pomme et faire disraitre et re-apparaitre la pomme aléatoirement
 // mettre le score
 
-let snakeHead = document.getElementById("head");
-let snakeBody = document.getElementById("body");
+const snakeHead = document.getElementById("head");
+const snakeBody = document.getElementById("body");
 const game = document.querySelector(".game");
-let pageX = 0;
+// const move = setInterval(snakeHead, 1000);
 
-game.addEventListener("click", (e) => {
-  if (e.pageX++) {
-    snakeHead.remove();
-  }
+window.addEventListener("load", (e) => {
+  snakeHead.style.left = transformX(+1);
 });
